@@ -1,0 +1,9 @@
+package main 
+
+func squareIsWhite(coordinates string) bool {
+    runes := []rune(coordinates)
+    if runes[0] % 2 == runes[1] % 2 {
+        return false
+    }
+    return true
+}
