@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -18,7 +19,7 @@ func TestAdditiveNumber(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		assert.Equal(isAdditiveNumber(test.input), test.expected)
+		assert.Equal(isAdditiveNumber(test.input), test.expected, fmt.Sprintf("Input %v ", test.input))
 	}
 
 }
