@@ -21,3 +21,9 @@ func Pow(a, b int) int {
 	}
 	return result
 }
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
